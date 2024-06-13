@@ -32,27 +32,9 @@ export const Blog = () => {
                         <p className='text-[14px] text-justify'>Typography is the work of typesetters, compositors, typographers, graphic designers, art directors, manga artists...</p>
                     </div>
                 </div>
-                <div>
-                    <img className='img' src="https://clauem2.arrowtheme.com/media/mgs_blog/How_to_create_an_inspiring_workspace_at_home.png" alt="" />
-                    <div>
-                        <h1 className=' font-bold '>Your small, calm and organized bedroom</h1>
-                        <p className='text-[14px] text-justify'>Typography is the work of typesetters, compositors, typographers, graphic designers, art directors, manga artists...</p>
-                    </div>
-                </div>
-                <div>
-                    <img className='img' src="https://clauem2.arrowtheme.com/media/mgs_blog/How_to_create_an_inspiring_workspace_at_home.png" alt="" />
-                    <div>
-                        <h1 className=' font-bold '>Your small, calm and organized bedroom</h1>
-                        <p className='text-[14px] text-justify'>Typography is the work of typesetters, compositors, typographers, graphic designers, art directors, manga artists...</p>
-                    </div>
-                </div>
-                <div>
-                    <img className='img' src="https://clauem2.arrowtheme.com/media/mgs_blog/How_to_create_an_inspiring_workspace_at_home.png" alt="" />
-                    <div>
-                        <h1 className=' font-bold '>Your small, calm and organized bedroom</h1>
-                        <p className='text-[14px] text-justify'>Typography is the work of typesetters, compositors, typographers, graphic designers, art directors, manga artists...</p>
-                    </div>
-                </div>
+              
+               
+               
             </div>
         </div>
     )
