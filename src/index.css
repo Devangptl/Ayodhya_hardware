@@ -52,15 +52,89 @@ code {
 
 
 
-img {
-  @apply duration-[0.5s,2s,2s] ease-[ease,cubic-bezier(0,0,0.44,1.18),cubic-bezier(0,0,0.44,1.18)] delay-[0s,0s,0s] transition-[opacity,transform,-webkit-transform] scale-100;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  -webkit-transition: opacity 0.5s,
-    -webkit-transform 2s cubic-bezier(0, 0, 0.44, 1.18);
-  transition: opacity 0.5s, transform 2s cubic-bezier(0, 0, 0.44, 1.18),
-    -webkit-transform 2s cubic-bezier(0, 0, 0.44, 1.18);
-  transition-behavior: normal, normal, normal;
+
+header{
+  width:200px;
+  position:Relative;
+  margin:0 auto;
+  padding:180px 20px;
+  background-color: #93C0A4;
+}
+
+input:focus{
+  width:200px;
+  height:30px;
+  border-radius:40px;
+  padding: 0 20px;
+  line-height: 2em;
+  font-weight: 100;
+  font-size: 12px;
+  cursor:auto;
+}
+
+
+input{
+  float:right;
+  border:1.5px solid #fff;
+  outline:none;
+  width:14px;
+cursor:pointer;
+
+  -webkit-transition:.2s all ease-in;
+  -moz-transition:.2s all ease-in;
+  transition:.2s all ease-in;
+  height:14px;
+  color:#fff;
+  border-radius:70px;
+  background:none;
+  font-size:0;
+}
+
+.close span{
+width:2px;
+height:10px;
+border-radius:2px;
+background:#fff;
+display:inline-block;}
+
+.front{
+  position:absolute;
+  right:124px;
+  top:27px;
+  transform: rotate(-45deg);
+  opacity:0;
+  animation-delay: 2s;
+  -webkit-transition:.2s all ease-in;
+  -moz-transition:.2s all ease-in;
+  transition:.2s all ease-in;
+
+}
+      
+
+.back{
+  position:absolute;
+  right:107px;
+  top:36px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transition:.2s all ease-in;
+} 
+    
+      
+
+input:focus + div .front{
+  opacity:1;
+  -webkit-transition-delay: .2s; 
+  -moz-transition-delay: .2s; 
+  transition-delay: .2s;
+  -webkit-transform: rotate(45deg);        
+  -moz-transform: rotate(45deg);        
+  transform: rotate(45deg);        
+}
+      
+
+input:focus + div .back{
+  right:124px;
+  top:27px;
 }
